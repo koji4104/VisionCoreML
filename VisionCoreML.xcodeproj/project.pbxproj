@@ -12,26 +12,16 @@
 		4A102D4822D37D6C00D9E3D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A102D4622D37D6C00D9E3D6 /* Main.storyboard */; };
 		4A102D4A22D37D6D00D9E3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A102D4922D37D6D00D9E3D6 /* Assets.xcassets */; };
 		4A102D4D22D37D6D00D9E3D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A102D4B22D37D6D00D9E3D6 /* LaunchScreen.storyboard */; };
-		4A102D5822D37D6E00D9E3D6 /* VisionCoreMLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A102D5722D37D6E00D9E3D6 /* VisionCoreMLTests.swift */; };
-		4A102D6322D37D6E00D9E3D6 /* VisionCoreMLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A102D6222D37D6E00D9E3D6 /* VisionCoreMLUITests.swift */; };
+		4A102D7222D37E4600D9E3D6 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A102D7122D37E4600D9E3D6 /* CoreImage.framework */; };
+		4A102D7422D37E6200D9E3D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A102D7322D37E6200D9E3D6 /* UIKit.framework */; };
+		4A102D7622D37E6D00D9E3D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A102D7522D37E6D00D9E3D6 /* Foundation.framework */; };
+		4A102D7822D37E7A00D9E3D6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A102D7722D37E7A00D9E3D6 /* AVFoundation.framework */; };
+		4A102D7E22D37EA900D9E3D6 /* VisionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A102D7922D37EA900D9E3D6 /* VisionAdapter.swift */; };
+		4A102D7F22D37EA900D9E3D6 /* MyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A102D7A22D37EA900D9E3D6 /* MyExtension.swift */; };
+		4A102D8022D37EA900D9E3D6 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4A102D7B22D37EA900D9E3D6 /* Inceptionv3.mlmodel */; };
+		4A102D8122D37EA900D9E3D6 /* Face.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4A102D7C22D37EA900D9E3D6 /* Face.mlmodel */; };
+		4A102D8222D37EA900D9E3D6 /* CoreMLAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A102D7D22D37EA900D9E3D6 /* CoreMLAdapter.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4A102D5422D37D6E00D9E3D6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4A102D3722D37D6C00D9E3D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4A102D3E22D37D6C00D9E3D6;
-			remoteInfo = VisionCoreML;
-		};
-		4A102D5F22D37D6E00D9E3D6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4A102D3722D37D6C00D9E3D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4A102D3E22D37D6C00D9E3D6;
-			remoteInfo = VisionCoreML;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4A102D3F22D37D6C00D9E3D6 /* VisionCoreML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionCoreML.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,12 +31,15 @@
 		4A102D4922D37D6D00D9E3D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A102D4C22D37D6D00D9E3D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A102D4E22D37D6D00D9E3D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A102D5322D37D6E00D9E3D6 /* VisionCoreMLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisionCoreMLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A102D5722D37D6E00D9E3D6 /* VisionCoreMLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionCoreMLTests.swift; sourceTree = "<group>"; };
-		4A102D5922D37D6E00D9E3D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A102D5E22D37D6E00D9E3D6 /* VisionCoreMLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisionCoreMLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A102D6222D37D6E00D9E3D6 /* VisionCoreMLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionCoreMLUITests.swift; sourceTree = "<group>"; };
-		4A102D6422D37D6E00D9E3D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A102D7122D37E4600D9E3D6 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		4A102D7322D37E6200D9E3D6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4A102D7522D37E6D00D9E3D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4A102D7722D37E7A00D9E3D6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4A102D7922D37EA900D9E3D6 /* VisionAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisionAdapter.swift; sourceTree = "<group>"; };
+		4A102D7A22D37EA900D9E3D6 /* MyExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyExtension.swift; sourceTree = "<group>"; };
+		4A102D7B22D37EA900D9E3D6 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		4A102D7C22D37EA900D9E3D6 /* Face.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Face.mlmodel; sourceTree = "<group>"; };
+		4A102D7D22D37EA900D9E3D6 /* CoreMLAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreMLAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,20 +47,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A102D5022D37D6E00D9E3D6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A102D5B22D37D6E00D9E3D6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				4A102D7822D37E7A00D9E3D6 /* AVFoundation.framework in Frameworks */,
+				4A102D7622D37E6D00D9E3D6 /* Foundation.framework in Frameworks */,
+				4A102D7422D37E6200D9E3D6 /* UIKit.framework in Frameworks */,
+				4A102D7222D37E4600D9E3D6 /* CoreImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,9 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				4A102D4122D37D6C00D9E3D6 /* VisionCoreML */,
-				4A102D5622D37D6E00D9E3D6 /* VisionCoreMLTests */,
-				4A102D6122D37D6E00D9E3D6 /* VisionCoreMLUITests */,
 				4A102D4022D37D6C00D9E3D6 /* Products */,
+				4A102D7022D37E4600D9E3D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,8 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				4A102D3F22D37D6C00D9E3D6 /* VisionCoreML.app */,
-				4A102D5322D37D6E00D9E3D6 /* VisionCoreMLTests.xctest */,
-				4A102D5E22D37D6E00D9E3D6 /* VisionCoreMLUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +77,11 @@
 		4A102D4122D37D6C00D9E3D6 /* VisionCoreML */ = {
 			isa = PBXGroup;
 			children = (
+				4A102D7D22D37EA900D9E3D6 /* CoreMLAdapter.swift */,
+				4A102D7C22D37EA900D9E3D6 /* Face.mlmodel */,
+				4A102D7B22D37EA900D9E3D6 /* Inceptionv3.mlmodel */,
+				4A102D7A22D37EA900D9E3D6 /* MyExtension.swift */,
+				4A102D7922D37EA900D9E3D6 /* VisionAdapter.swift */,
 				4A102D4222D37D6C00D9E3D6 /* AppDelegate.swift */,
 				4A102D4422D37D6C00D9E3D6 /* ViewController.swift */,
 				4A102D4622D37D6C00D9E3D6 /* Main.storyboard */,
@@ -107,22 +92,15 @@
 			path = VisionCoreML;
 			sourceTree = "<group>";
 		};
-		4A102D5622D37D6E00D9E3D6 /* VisionCoreMLTests */ = {
+		4A102D7022D37E4600D9E3D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4A102D5722D37D6E00D9E3D6 /* VisionCoreMLTests.swift */,
-				4A102D5922D37D6E00D9E3D6 /* Info.plist */,
+				4A102D7722D37E7A00D9E3D6 /* AVFoundation.framework */,
+				4A102D7522D37E6D00D9E3D6 /* Foundation.framework */,
+				4A102D7322D37E6200D9E3D6 /* UIKit.framework */,
+				4A102D7122D37E4600D9E3D6 /* CoreImage.framework */,
 			);
-			path = VisionCoreMLTests;
-			sourceTree = "<group>";
-		};
-		4A102D6122D37D6E00D9E3D6 /* VisionCoreMLUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4A102D6222D37D6E00D9E3D6 /* VisionCoreMLUITests.swift */,
-				4A102D6422D37D6E00D9E3D6 /* Info.plist */,
-			);
-			path = VisionCoreMLUITests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,42 +123,6 @@
 			productReference = 4A102D3F22D37D6C00D9E3D6 /* VisionCoreML.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4A102D5222D37D6E00D9E3D6 /* VisionCoreMLTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4A102D6A22D37D6E00D9E3D6 /* Build configuration list for PBXNativeTarget "VisionCoreMLTests" */;
-			buildPhases = (
-				4A102D4F22D37D6E00D9E3D6 /* Sources */,
-				4A102D5022D37D6E00D9E3D6 /* Frameworks */,
-				4A102D5122D37D6E00D9E3D6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4A102D5522D37D6E00D9E3D6 /* PBXTargetDependency */,
-			);
-			name = VisionCoreMLTests;
-			productName = VisionCoreMLTests;
-			productReference = 4A102D5322D37D6E00D9E3D6 /* VisionCoreMLTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		4A102D5D22D37D6E00D9E3D6 /* VisionCoreMLUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4A102D6D22D37D6E00D9E3D6 /* Build configuration list for PBXNativeTarget "VisionCoreMLUITests" */;
-			buildPhases = (
-				4A102D5A22D37D6E00D9E3D6 /* Sources */,
-				4A102D5B22D37D6E00D9E3D6 /* Frameworks */,
-				4A102D5C22D37D6E00D9E3D6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4A102D6022D37D6E00D9E3D6 /* PBXTargetDependency */,
-			);
-			name = VisionCoreMLUITests;
-			productName = VisionCoreMLUITests;
-			productReference = 4A102D5E22D37D6E00D9E3D6 /* VisionCoreMLUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -193,14 +135,6 @@
 				TargetAttributes = {
 					4A102D3E22D37D6C00D9E3D6 = {
 						CreatedOnToolsVersion = 10.2.1;
-					};
-					4A102D5222D37D6E00D9E3D6 = {
-						CreatedOnToolsVersion = 10.2.1;
-						TestTargetID = 4A102D3E22D37D6C00D9E3D6;
-					};
-					4A102D5D22D37D6E00D9E3D6 = {
-						CreatedOnToolsVersion = 10.2.1;
-						TestTargetID = 4A102D3E22D37D6C00D9E3D6;
 					};
 				};
 			};
@@ -218,8 +152,6 @@
 			projectRoot = "";
 			targets = (
 				4A102D3E22D37D6C00D9E3D6 /* VisionCoreML */,
-				4A102D5222D37D6E00D9E3D6 /* VisionCoreMLTests */,
-				4A102D5D22D37D6E00D9E3D6 /* VisionCoreMLUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -235,20 +167,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4A102D5122D37D6E00D9E3D6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A102D5C22D37D6E00D9E3D6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -256,41 +174,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A102D8022D37EA900D9E3D6 /* Inceptionv3.mlmodel in Sources */,
+				4A102D8122D37EA900D9E3D6 /* Face.mlmodel in Sources */,
+				4A102D8222D37EA900D9E3D6 /* CoreMLAdapter.swift in Sources */,
 				4A102D4522D37D6C00D9E3D6 /* ViewController.swift in Sources */,
 				4A102D4322D37D6C00D9E3D6 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A102D4F22D37D6E00D9E3D6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4A102D5822D37D6E00D9E3D6 /* VisionCoreMLTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A102D5A22D37D6E00D9E3D6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4A102D6322D37D6E00D9E3D6 /* VisionCoreMLUITests.swift in Sources */,
+				4A102D7E22D37EA900D9E3D6 /* VisionAdapter.swift in Sources */,
+				4A102D7F22D37EA900D9E3D6 /* MyExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4A102D5522D37D6E00D9E3D6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4A102D3E22D37D6C00D9E3D6 /* VisionCoreML */;
-			targetProxy = 4A102D5422D37D6E00D9E3D6 /* PBXContainerItemProxy */;
-		};
-		4A102D6022D37D6E00D9E3D6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4A102D3E22D37D6C00D9E3D6 /* VisionCoreML */;
-			targetProxy = 4A102D5F22D37D6E00D9E3D6 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4A102D4622D37D6C00D9E3D6 /* Main.storyboard */ = {
@@ -433,6 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TD6G2FZN5;
 				INFOPLIST_FILE = VisionCoreML/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TD6G2FZN5;
 				INFOPLIST_FILE = VisionCoreML/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,84 +355,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		4A102D6B22D37D6E00D9E3D6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = VisionCoreMLTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.twitter.koji4104.VisionCoreML.VisionCoreMLTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VisionCoreML.app/VisionCoreML";
-			};
-			name = Debug;
-		};
-		4A102D6C22D37D6E00D9E3D6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = VisionCoreMLTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.twitter.koji4104.VisionCoreML.VisionCoreMLTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VisionCoreML.app/VisionCoreML";
-			};
-			name = Release;
-		};
-		4A102D6E22D37D6E00D9E3D6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = VisionCoreMLUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.twitter.koji4104.VisionCoreML.VisionCoreMLUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = VisionCoreML;
-			};
-			name = Debug;
-		};
-		4A102D6F22D37D6E00D9E3D6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = VisionCoreMLUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.twitter.koji4104.VisionCoreML.VisionCoreMLUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = VisionCoreML;
 			};
 			name = Release;
 		};
@@ -557,24 +375,6 @@
 			buildConfigurations = (
 				4A102D6822D37D6E00D9E3D6 /* Debug */,
 				4A102D6922D37D6E00D9E3D6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4A102D6A22D37D6E00D9E3D6 /* Build configuration list for PBXNativeTarget "VisionCoreMLTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4A102D6B22D37D6E00D9E3D6 /* Debug */,
-				4A102D6C22D37D6E00D9E3D6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4A102D6D22D37D6E00D9E3D6 /* Build configuration list for PBXNativeTarget "VisionCoreMLUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4A102D6E22D37D6E00D9E3D6 /* Debug */,
-				4A102D6F22D37D6E00D9E3D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
