@@ -41,8 +41,16 @@ class VisionAdapter {
 
         // Repeat the number of faces
         for (index, face) in results.enumerated() {
-            // Cut out and classify images
-            let ciCropImage = ciImage.cropImage(rect: face.bounds)
+            // Expand the rectangle
+            let b:CGFloat = face.bounds.width/20
+            let rc:CGRect = CGRect(
+                x: face.bounds.minX-(b*1),
+                y: face.bounds.minY-(b*1),
+                width: face.bounds.size.width+(b*2),
+                height: face.bounds.size.height+(b*1)
+            )
+            results[index].bounds = rc
+            let ciCropImage = ciImage.cropImage(rect:rc)
             faceModel.recognize(ciImage: ciCropImage)
             results[index].clss = faceModel.result.clss
         }

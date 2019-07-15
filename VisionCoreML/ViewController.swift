@@ -94,7 +94,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         self.setPosition()
     }
     
-    /// Align the UI
+    /// Align UI
     private func setPosition() {
         let w:CGFloat = UIScreen.main.bounds.size.width
         let h:CGFloat = UIScreen.main.bounds.size.height
@@ -162,7 +162,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         if fOption == .coreml {
             // CoreML
             var text:String = ""
-            let clss = self.coremlAd.result.clss.sorted{ $0.1 > $1.1 }
+            let clss = self.coremlAd.result.clss.sorted{ $0.value > $1.value }
             for (key,val) in clss.prefix(3) {
                 let key2 = key.components(separatedBy: ", ")[0]
                 text += String(NSString(format: "%02d", val)) + " " + key2 + "\n"
@@ -208,11 +208,13 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                 UIColor.green.setStroke()
                 let bzRect = UIBezierPath(rect: r.bounds)
                 bzRect.stroke()
-                let clss = r.clss.sorted{ $0.1 > $1.1 }
+                
+                let clss = r.clss.sorted{ $0.value > $1.value }
+                var text:String = ""
                 for (key,val) in clss.prefix(1) {
-                    let text = (NSString(format:"%02d ",val) as String) + key
-                    text.draw(at: CGPoint(x:r.bounds.minX, y:r.bounds.maxY), withAttributes: attrs)
+                    text += (NSString(format:"%02d ",val) as String) + key + "\n"
                 }
+                text.draw(at: CGPoint(x:r.bounds.minX, y:r.bounds.maxY), withAttributes: attrs)
             }
             let image = UIGraphicsGetImageFromCurrentImageContext()!
             UIGraphicsEndImageContext()
@@ -253,13 +255,10 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                     var uiImage:UIImage! = UIImage(ciImage: ciCopyImage)
                     
                     switch UIDevice.current.orientation {
-                    case .portrait:
-                        uiImage = uiImage.rotated(degrees: 90.0, flipVertical: false, flipHorizontal: false)
-                    case .portraitUpsideDown:
-                        uiImage = uiImage.rotated(degrees: 270.0, flipVertical: false, flipHorizontal: false)
+                    case .portrait: uiImage = uiImage.rotated(90.0)
+                    case .portraitUpsideDown: uiImage = uiImage.rotated(270.0)
                     case .landscapeLeft: break
-                    case .landscapeRight:
-                        uiImage = uiImage.rotated(degrees: 0.0, flipVertical: true, flipHorizontal: true)
+                    case .landscapeRight: uiImage = uiImage.rotated(180.0)
                     default: break
                     }
                     self.visionAd.recognizeFace(on: uiImage.safeCiImage!)

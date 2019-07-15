@@ -43,8 +43,8 @@ class CoreMLAdapter {
         guard let results = request.results as? [VNClassificationObservation] else { 
             return 
         }
-        // Change the top 3 to 100%
-        for observation in results.prefix(3) {
+        // Convert to 100%
+        for observation in results {
             self.result.clss[observation.identifier] = (Int)(observation.confidence * 100.0)
         }
     }    

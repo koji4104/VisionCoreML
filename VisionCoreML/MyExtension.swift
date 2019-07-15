@@ -37,7 +37,7 @@ extension UIImage {
         return nil
     }
     /// rotated (degrees=0-359)
-    func rotated(degrees: CGFloat, flipVertical: Bool = false, flipHorizontal: Bool = false) -> UIImage? {
+    func rotated(_ degrees: CGFloat, flipVertical: Bool = false, flipHorizontal: Bool = false) -> UIImage? {
         guard let ciImage = safeCiImage else {
             return nil
         }
