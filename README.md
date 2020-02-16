@@ -1,7 +1,7 @@
 # Vision Core ML
 
 ## Overview
-Use Vision framework and Core ML.
+Use Vision framework and Core ML.  
 <img src='img/01.png' width=50%>
 
 ## Development
