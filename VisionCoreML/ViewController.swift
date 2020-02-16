@@ -53,16 +53,9 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         self.segOption.selectedSegmentIndex = 0
         self.segOption.addTarget(self, action: #selector(onOptionChanged(_:)), for: UIControl.Event.valueChanged)
         self.view.addSubview(self.segOption)
-        
-        let params2 = ["20","30","40"]
-        self.segFontSize = UISegmentedControl(items: params2)
-        self.segFontSize.tintColor = UIColor.white
-        self.segFontSize.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.3)
-        self.segFontSize.selectedSegmentIndex = 1
-        self.view.addSubview(self.segFontSize)
 
-        let params3 = ["On","Off"]
-        self.segOnOff = UISegmentedControl(items: params3)
+        let params2 = ["Play","Stop"]
+        self.segOnOff = UISegmentedControl(items: params2)
         self.segOnOff.tintColor = UIColor.white
         self.segOnOff.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.3)
         self.segOnOff.selectedSegmentIndex = 0
@@ -115,8 +108,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             self.myImageView.frame = CGRect.init(x:x2, y:y2, width:w2, height:h2)
         }
 
-        self.segOption.frame = CGRect(x: 20, y: h-130, width: 240, height: 32)
-        self.segFontSize.frame = CGRect(x: 20, y: h-90, width: 240, height: 32)
+        self.segOption.frame = CGRect(x: 20, y: h-90, width: 240, height: 32)
         self.segOnOff.frame = CGRect(x: 20, y: h-50, width: 160, height: 32)
     }
   
@@ -207,6 +199,11 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             for r in self.visionAd.results {
                 UIColor.green.setStroke()
                 let bzRect = UIBezierPath(rect: r.bounds)
+                bzRect.lineWidth = 4
+                bzRect.stroke()
+                /*
+                UIColor.green.setStroke()
+                let bzRect = UIBezierPath(rect: r.bounds)
                 bzRect.stroke()
                 
                 let clss = r.clss.sorted{ $0.value > $1.value }
@@ -215,6 +212,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                     text += (NSString(format:"%02d ",val) as String) + key + "\n"
                 }
                 text.draw(at: CGPoint(x:r.bounds.minX, y:r.bounds.maxY), withAttributes: attrs)
+                */
             }
             let image = UIGraphicsGetImageFromCurrentImageContext()!
             UIGraphicsEndImageContext()
@@ -277,9 +275,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     }
     
     func fontsize() -> CGFloat {
-        if self.segFontSize.selectedSegmentIndex == 0 { return 20 }
-        else if self.segFontSize.selectedSegmentIndex == 1 { return 30 }
-        else { return 40 }
+        return 50
     }
 
     func onoff() -> Bool {
